@@ -58,6 +58,19 @@
   }
 }
 
+\newcommand{\resumePlainItem}[1]{
+  \vspace{-1pt}
+  \begin{list}{}{
+    \setlength{\leftmargin}{0em}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\topsep}{0pt}
+  }
+  \item[] \small{#1 \vspace{-2pt}}
+  \end{list}
+  \vspace{-5pt}
+}
+
 % Just in case someone needs a heading that does not need to be in a list
 \newcommand{\resumeHeading}[4]{
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -119,10 +132,9 @@
   \begin{minipage}[c]{0.7\textwidth}
     \raggedright
     \textbf{\href{https://miguelpeixoto.net/}{\Large Miguel Peixoto}} \\
-    \href{https://miguelpeixoto.net/}{miguelpeixoto.net} \\
+    \href{https://miguelpeixoto.net/}{Website: miguelpeixoto.net} \\
     Email: \href{mailto:miguelpeixoto457@gmail.com}{miguelpeixoto457@gmail.com} \\
-    GitHub: \href{https://github.com/mcpeixoto}{github.com/mcpeixoto} \\
-    Portugal
+    GitHub: \href{https://github.com/mcpeixoto}{github.com/mcpeixoto}
   \end{minipage}
 \end{tabular*}
 \end{center}
@@ -143,41 +155,39 @@
         \resumeItem{Leadership}
           {Leading team of data, frontend and backend engineers across 16 projects in 7 departments.}
         \resumeItem{Projects}
-          {Training LLMs from scratch, deploying GenAI frontends/backends, autoencoders for anomaly detection, PDF information extraction/classification/clustering, automatic ticketing with Agentic LLMs, Computer Vision for factory traceability.}
+          {Training LLMs from scratch, deploying GenAI frontends/backends, autoencoders for anomaly detection, PDF information extraction/classification/clustering, automatic ticketing with Agentic LLMs, Computer Vision for factory traceability, on-premises system design on 30+ linux machines for sensitive applications.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Bosch Security Systems}{Portugal/Germany}
       {Boost Program - Machine Learning Engineer}{Aug 2023 -- Feb 2025}
+      \resumePlainItem{Selected as 1 of 8 from 900+ applicants for Portuguese JMP. Mentored by Sergio Salústio, Director of R\&D.}
       \resumeItemListStart
-        \resumeItem{Selection}
-          {Selected as 1 of 8 from 900+ applicants for Portuguese Junior Managers Program. Mentored by Sergio Salústio, Director of R\&D at Bosch Ovar.}
         \resumeItem{Computer Vision}
-          {Developed object detection system for factory material tracking, reducing inefficiencies and scaling to 3 factories worldwide.}
+            {Designed and deployed a computer vision and object detection system for real-time factory material tracking, optimizing logistics and reducing inefficiencies. Solution scaled to 3 factories globally.}
         \resumeItem{Embedded ML}
-          {Full ML lifecycle on embedded devices: data engineering, training, fine-tuning, quantization, pruning, compilation and firmware deployment.}
+            {Full ML lifecycle on embedded devices: Data engineering, training, finetuning, distilation, quantization, pruning, compilation and firmware deployment.}
         \resumeItem{AI Solutions}
-          {Engaged stakeholders to identify use cases and deploy AI solutions while ensuring compliance and data governance.}
+            {Engaged stakeholders to identify use cases and deploy solutions while ensuring data governance.}
       \resumeItemListEnd
 
     \resumeSubheading
       {University of Minho}{Braga, Portugal}
       {Researcher}{May 2023 -- Dec 2024}
       \resumeItemListStart
-        \resumeItem{Industry Collaboration}
+        \resumeItem{Industry}
           {Collaborated with Bosch Car Multimedia to advance anomaly detection in industrial applications.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Instrumentation and Experimental Particle Physics Laboratory}{Braga, Portugal}
       {Researcher}{Oct 2021 -- Present}
+      \resumePlainItem{Led team of 10 students specializing in anomaly detection and quantum computing for high-energy physics.}
       \resumeItemListStart
-        \resumeItem{Team Leadership}
-          {Led team of 10 students specializing in anomaly detection and quantum computing for high-energy physics.}
         \resumeItem{NLP \& Healthcare}
-          {Collaborated with SPAC Lab on disease diagnosis model using Portuguese National Health Service records. Implemented HuggingFace Sentence-Transformers and Facebook Faiss for similarity search.}
+          {Collaborated with  \href{https://socialcomplexity.eu/}{SPAC Lab} on disease diagnosis model using \href{https://www.sns.gov.pt/}{Portuguese National Health Service} records. Implemented HuggingFace Sentence-Transformers and Facebook Faiss for similarity search.}
         \resumeItem{Quantum ML}
-          {Compared Quantum ML architectures with classical methods. Developed robust library with parallelization, unit tests, CI/CD pipelines using Pennylane, Qiskit, PyTorch, and Optuna.}
+          {Compared Quantum ML architectures with classical methods. Developed robust \href{https://github.com/mcpeixoto/QML-HEP}{library} with parallelization, unit tests, CI/CD pipelines using Pennylane, Qiskit, PyTorch, and Optuna.}
         \resumeItem{Education}
           {Facilitated machine learning workshops and seminars for research institute students.}
       \resumeItemListEnd
@@ -187,7 +197,7 @@
       {Summer Intern}{Apr 2020 -- Oct 2021}
       \resumeItemListStart
         \resumeItem{Research Projects}
-          {Advanced data analysis for dark matter research (2020) and Anomaly Detection for New Physics Discovery at CERN's Large Hadron Collider (2021).}
+          {\href{http://espace.cern.ch/lip/pub/docs/LIP-STUDENTS-20-06.pdf}{Advanced data analysis for dark matter research (2020)} and \href{https://miguelpeixoto.net/Est_gio_LIP_2021.pdf}{Anomaly Detection for New Physics Discovery at CERN's Large Hadron Collider (2021)}.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -196,90 +206,81 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Minho}{Braga, Portugal}
-      {Master's Degree in Information Physics; Grade: 20/20}{}
+      {Master's Degree in Information Physics; Grade: 20.0/20.0}{}
       \resumeItemListStart
         \resumeItem{Thesis}
-          {Anomaly Detection as a Quality Control Tool in an Industrial Context. Supervised by Prof. Nuno Castro, Director of LIP and National Center for Advanced Computing. Created production-ready autoencoder framework validated at Bosch Braga, outperformed SOTA on MvTec benchmark.}
+          {Anomaly Detection as a Quality Control Tool in an Industrial Context. Created production-ready AutoML autoencoder framework validated at Bosch Braga that can detect any anomaly using only defect free data. Outperformed SOTA on MvTec benchmark.  Supervised by Prof. Nuno Castro, Director of \href{https://www.lip.pt/}{LIP} and \href{https://rnca.fccn.pt/en/}{RCNA}.}
         \resumeItem{Role}{Student representative of master's program}
       \resumeItemListEnd
     \resumeSubheading
       {University of Minho}{Braga, Portugal}
-      {Bachelor's Degree in Physics Engineering; Average Score: 16.4/20}{}
+      {Bachelor's Degree in Physics Engineering; Average Score: 16.4/20.0}{}
       \resumeItemListStart
         \resumeItem{Leadership}
-          {Founded NEFUM Discord community (200+ members), organized national physics students meeting (134 attendees), ran for association president.}
-        \resumeItem{Skills Development}{Active member of Academic Debate Association, developing communication and analytical skills.}
+          {Founded \href{https://nefum.di.uminho.pt/}{NEFUM} Discord community (200+ members), organized national physics students meeting (134 attendees), ran for association president.}
+        \resumeItem{Skills Development}{Member of \href{https://aedum.com/}{Academic Debate Association}, developing communication and analytical skills.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------PUBLICATIONS-----------------
 \section{Publications}
   \resumeSubHeadingListStart
-    \resumeSubItem{Fitting a Collider in a Quantum Computer}
+    \resumeSubItem{\href{https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2023.1268852/full}{Fitting a Collider in a Quantum Computer}}
       {Tackling the Challenges of Quantum Machine Learning for Big Datasets. Frontiers in Artificial Intelligence, 2022. DOI: 10.3389/frai.2023.1268852}
   \resumeSubHeadingListEnd
 
-%-----------AWARDS & HONORS-----------------
+%-----------AWARDS \& HONORS-----------------
 \section{Awards \& Honors}
   \resumeSubHeadingListStart
     \resumeSubItem{15th Fraunhofer Portugal Challenge}
-      {Recognized for outstanding innovation in technological research for master's thesis.}
+      {Outstanding innovation in technological research for master's thesis.}
     \resumeSubItem{UMinho University Award}
-      {Initiation in Scientific Research award for Variational AutoEncoders anomaly detection system in high-energy physics.}
+      {Initiation in Scientific Research award for Variational AutoEncoders anomaly detection system in high-energy physics. \href{https://www.ecum.uminho.pt/pt/_layouts/15/UMinho.PortaisUOEI.UI/Pages/EventsDetail.aspx?id=58602}{[University Media Link]} \href{https://www.avozdetrasosmontes.pt/vila-realense-juntou-inteligencia-artificial-a-fisica-de-particulas/}{[Local Newspaper]}}
     \resumeSubItem{Empreende@Villa.Jovem-BILATECH}
-      {1st place and 5k prize among 30+ finalists for innovative business idea in marketing automation.}
+      {1st place and 5k€ prize among 30+ finalists in the contest aimed at young entrepreneurs for innovative business idea in marketing automation.}
     \resumeSubItem{Meritorious Behavior Award}
-      {4 distinctions from Secondary School for participation in "Project Rocket" and Nobel Prize physics seminar.}
-  \resumeSubHeadingListEnd
+      {Awarded 4 distinctions at the end of high school due to my participation in \href{https://www.youtube.com/watch?v=a9LaWNVJh4s}{"Project Rocket"} and my seminar on the
+        Noble Prize of Physics 2017 promoted by \href{https://www.utad.pt/}{UTAD} University. }
+    \resumeSubHeadingListEnd
 
 %-----------ADDITIONAL ACTIVITIES-----------------
-\section{Additional Activities}
+\section{Social and Political Activities}
   \resumeSubHeadingListStart
     \resumeSubheading
       {European Researchers' Night - LIP Presentation}{Braga, Portugal}
-      {Science Outreach Presenter}{2022}
-      \resumeItemListStart
-        \resumeItem{Public Engagement}
-          {Presented cutting-edge physics research to general public, promoting scientific literacy and inspiring next generation of researchers.}
-      \resumeItemListEnd
+      {Science Outreach Presenter}{2022, 2023}
+      \resumePlainItem{Presented SOTA physics research to the public, promoting scientific literacy and inspiring next generation of researchers.}
 
     \resumeSubheading
       {iQuHACK MIT Hackathon}{Cambridge, MA, USA}
       {Quantum Computing Participant}{2022}
-      \resumeItemListStart
-        \resumeItem{IonQ Challenge}
-          {Competed in prestigious MIT quantum computing hackathon, developing innovative solutions using IonQ's quantum hardware and advancing quantum algorithm development skills.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {ESA Winter Astronomy Camp}{Saint-Barthélemy, Italy}
+        \resumePlainItem{Developing innovative solutions using IonQ's quantum hardware and advancing quantum algorithm development skills.}   
+        
+    \resumeSubheading{ESA Winter Astronomy Camp}{Saint-Barthélemy, Italy}
       {Selected Participant}{2019}
-      \resumeItemListStart
-        \resumeItem{International Selection}
-          {Selected as 1 of 40 participants from 500+ worldwide applications for intensive 1-week astronomy program focused on exoplanet research.}
-        \resumeItem{Technical Skills}
-          {Engaged in advanced lectures, hands-on observatory activities, and nighttime observations using professional astronomical instruments.}
-      \resumeItemListEnd
+        \resumePlainItem{Selected as 1 of 40 participants from 500+ worldwide applications for an astronomy program on exoplanet research, engaging lectures, hands-on observatory activities, and nighttime observations.}
+
   \resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------------
-\section{Technical Skills}
-  \resumeSubHeadingListStart
-    \item{
-      \textbf{Languages}{: Python, SQL, C++, JavaScript}
-      \hfill
-      \textbf{ML/AI}{: PyTorch, Scikit-Learn, HuggingFace, TensorFlow}
-    }
-    \item{
-      \textbf{Quantum Computing}{: Pennylane, Qiskit}
-      \hfill
-      \textbf{Cloud \& Tools}{: Docker, CI/CD, Git, AWS}
-    }
-    \item{
-      \textbf{Computer Vision}{: Object Detection, Anomaly Detection}
-      \hfill
-      \textbf{NLP}{: Sentence-Transformers, LLMs, GenAI}
-    }
-  \resumeSubHeadingListEnd
+% \section{Technical Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Python, SQL, C++}
+%      \hfill
+%      \textbf{ML/AI}{: PyTorch, Scikit-Learn, TensorFlow}
+%    }
+%    \item{
+%      \textbf{Quantum Computing}{: Pennylane, Qiskit}
+%      \hfill
+%      \textbf{Cloud \& Tools}{: Docker, CI/CD, Git, AWS}
+%    }
+%    \item{
+%      \textbf{Computer Vision}{: Object Detection, Anomaly Detection}
+%      \hfill
+%      \textbf{NLP}{: Sentence-Transformers, LLMs, GenAI}
+%    }
+%  \resumeSubHeadingListEnd
+
 
 \end{document}
