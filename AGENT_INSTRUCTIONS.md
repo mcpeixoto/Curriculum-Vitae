@@ -158,6 +158,9 @@ while the wording is exact**.
 A correction that only lives in a chat log gets repeated next week.
 <!-- CLAUDE-CORE:END -->
 
+## This repo — show the CV first
+
+CV copy and layout are reviewed by a person before they ship. After `latexmk -pdf main.tex`, **stop**. Do not `git commit`, push, open a PR, or merge until the user has seen the PDF (or the `main.tex` diff) and asked to ship. Core §5 does not apply to content edits in this repo.
 
 ## Verify
 
