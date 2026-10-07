@@ -34,7 +34,7 @@
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.15in}
+\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
@@ -44,8 +44,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate PDF is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -97,10 +97,10 @@
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,itemsep=1pt,parsep=0pt,topsep=2pt]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt,parsep=0pt,topsep=0pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -149,19 +149,9 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {\href{https://peixotolabs.com}{PeixotoLabs}}{Portugal}
-      {Founder}{Jun 2026 -- Present}
-      \resumePlainItem{AI and engineering company: software, ML, electronics and automation for industrial and operational problems.}
-
-    \resumeSubheading
       {Sybilion}{Porto, Portugal}
-      {Founding Machine Learning Engineer}{Jan 2026 -- Oct 2026}
-      \resumeItemListStart
-        \resumeItem{Forecasting}
-          {Built the internal forecasting machinery from scratch (8-stage pipeline with HPO) over 3B+ time series, and trained SSL time-series embedding models from scratch (128-d, contrastive and reconstruction).}
-        \resumeItem{Agents}
-          {Multi-agent competitive arenas (fan-out, score, select) using orchestrator--worker setups, bounded tools, state machines and metric gates.}
-      \resumeItemListEnd
+      {Founding Machine Learning Engineer}{Jan 2026 -- Present}
+      \resumePlainItem{Building an ML framework for autonomous and agentic-enabled forecasting at scale, including time-series embedding models and a database of 3B+ time series.}
 
     \resumeSubheading
       {Keenfinity (Bosch Spin-off)}{Portugal}
@@ -196,7 +186,7 @@
 
     \resumeSubheading
       {Instrumentation and Experimental Particle Physics Laboratory}{Braga, Portugal}
-      {Researcher}{Oct 2021 -- Dec 2024}
+      {Researcher}{Oct 2021 -- Present}
       \resumePlainItem{Led team of 10 students specializing in anomaly detection and quantum computing for high-energy physics.}
       \resumeItemListStart
         \resumeItem{NLP \& Healthcare}
@@ -224,7 +214,7 @@
       {Master's Degree in Information Physics; Grade: 20.0/20.0}{}
       \resumeItemListStart
         \resumeItem{Thesis}
-          {Anomaly Detection as a Quality Control Tool in an Industrial Context. Production-ready AutoML autoencoder framework, validated at Bosch Braga on defect-free data only; outperformed SOTA on MvTec. Supervised by Prof. Nuno Castro, Director of \href{https://www.lip.pt/}{LIP} and \href{https://rnca.fccn.pt/en/}{RCNA}.}
+          {Anomaly Detection as a Quality Control Tool in an Industrial Context. Created production-ready AutoML autoencoder framework validated at Bosch Braga that can detect any anomaly using only defect free data. Outperformed SOTA on MvTec benchmark.  Supervised by Prof. Nuno Castro, Director of \href{https://www.lip.pt/}{LIP} and \href{https://rnca.fccn.pt/en/}{RCNA}.}
         \resumeItem{Role}{Student representative of master's program}
       \resumeItemListEnd
     \resumeSubheading
@@ -240,10 +230,8 @@
 %-----------PUBLICATIONS-----------------
 \section{Publications}
   \resumeSubHeadingListStart
-    \resumeSubItem{\href{https://doi.org/10.36227/techrxiv.176153508.89503711/v1}{Automated Anomaly Detection for Manufacturing}}
-      {Self-Tuned Autoencoders with Synthetic Defects. TechRxiv preprint, 2025. DOI: 10.36227/techrxiv.176153508.89503711/v1}
     \resumeSubItem{\href{https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2023.1268852/full}{Fitting a Collider in a Quantum Computer}}
-      {Tackling the Challenges of Quantum Machine Learning for Big Datasets. Frontiers in Artificial Intelligence, 2023. DOI: 10.3389/frai.2023.1268852}
+      {Tackling the Challenges of Quantum Machine Learning for Big Datasets. Frontiers in Artificial Intelligence, 2022. DOI: 10.3389/frai.2023.1268852}
   \resumeSubHeadingListEnd
 
 %-----------AWARDS \& HONORS-----------------
@@ -266,16 +254,16 @@
     \resumeSubheading
       {European Researchers' Night - LIP Presentation}{Braga, Portugal}
       {Science Outreach Presenter}{2022, 2023}
-      \resumePlainItem{Presented SOTA physics research to the public.}
+      \resumePlainItem{Presented SOTA physics research to the public, promoting scientific literacy and inspiring next generation of researchers.}
 
     \resumeSubheading
       {iQuHACK MIT Hackathon}{Cambridge, MA, USA}
       {Quantum Computing Participant}{2022}
-        \resumePlainItem{Built solutions on IonQ quantum hardware.}   
+        \resumePlainItem{Developing innovative solutions using IonQ's quantum hardware and advancing quantum algorithm development skills.}   
         
     \resumeSubheading{ESA Winter Astronomy Camp}{Saint-Barthélemy, Italy}
       {Selected Participant}{2019}
-        \resumePlainItem{Selected as 1 of 40 from 500+ worldwide applications; exoplanet research and observatory work.}
+        \resumePlainItem{Selected as 1 of 40 participants from 500+ worldwide applications for an astronomy program on exoplanet research, engaging lectures, hands-on observatory activities, and nighttime observations.}
 
   \resumeSubHeadingListEnd
 
